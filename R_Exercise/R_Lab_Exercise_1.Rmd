@@ -3,8 +3,8 @@ title: "DS311 - Basic R Lab Exercise"
 author: "Kimsean Pen"
 date: "3/23/2023"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 subtitle: R Lab Exercise
 ---
 
@@ -208,34 +208,34 @@ paste("Current Working Directory: ", wd2)
 
 ```{r, include=FALSE}
 # Install a new package, note the quotation marks
- install.packages("MASS")
+ #install.packages("MASS")
 
 # Install multiple packages at once
-install.packages(c("dplyr", "ggplot2"))
-
+#install.packages(c("dplyr", "ggplot2"))
+library(MASS)
 # Loading the package, note no quotation marks
- library(dplyr)
+library(dplyr)
 
 # Checking the package version
-packageVersion("dplyr")
+#packageVersion("dplyr")
 
 # List all functions in a package
-ls("package:ggplot2")
+#ls("package:ggplot2")
 
 # Loading a function from package
-ggplot2::geom_line
+#ggplot2::geom_line
 
 # Update all packages
- update.packages()
+ #update.packages()
 
 # Unload a package
-detach(package:ggplot2, unload=TRUE)
+#detach(package:ggplot2, unload=TRUE)
 
 # Help function
- help(dplyr)
+ #help(dplyr)
 
 # Checking the session info
-sessionInfo()
+#sessionInfo()
 ```
 
 ***
